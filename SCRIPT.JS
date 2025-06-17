@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }, { threshold: 0.5 });
         counterObserver.observe(statsSection);
     }
-    
+
     // --- Back to Top Button ---
     const backToTopButton = document.getElementById('back-to-top');
     if (backToTopButton) {
@@ -80,6 +80,40 @@ document.addEventListener('DOMContentLoaded', () => {
             if (dropdown) {
                 dropdown.querySelector('.dropdown-toggle').classList.add('active');
             }
+        }
+    });
+
+    // --- Dropdown Hover Fix ---
+    document.querySelectorAll('.dropdown').forEach(dropdown => {
+        let timeout;
+
+        const toggle = dropdown.querySelector('.dropdown-toggle');
+        const content = dropdown.querySelector('.dropdown-content');
+
+        if (toggle && content) {
+            dropdown.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+                content.style.display = 'block';
+                content.classList.add('show');
+            });
+
+            dropdown.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    content.style.display = 'none';
+                    content.classList.remove('show');
+                }, 200);
+            });
+
+            content.addEventListener('mouseenter', () => {
+                clearTimeout(timeout);
+            });
+
+            content.addEventListener('mouseleave', () => {
+                timeout = setTimeout(() => {
+                    content.style.display = 'none';
+                    content.classList.remove('show');
+                }, 200);
+            });
         }
     });
 });
