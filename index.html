@@ -14,9 +14,39 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow-x: hidden;
+            scroll-behavior: smooth;
+        }
+        .hero, .section, .section-light {
+            transition: transform 0.4s ease, opacity 0.4s ease;
+        }
+        .hero:hover, .section:hover, .section-light:hover {
+            transform: scale(1.01);
+            opacity: 0.97;
+        }
+        .btn {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .btn:hover {
+            transform: scale(1.05);
+            background-color: #0077cc;
+        }
+        .category-card {
+            animation: fadeInUp 1s ease forwards;
+            opacity: 0;
+        }
+        @keyframes fadeInUp {
+            0% { opacity: 0; transform: translateY(40px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+    </style>
 </head>
 <body>
-
     <header class="main-header">
         <div class="container">
             <nav class="navbar">
@@ -46,26 +76,26 @@
             <div class="container">
                 <div class="text-center" style="max-width: 800px; margin: 0 auto 4rem;">
                     <h2>Your Trusted Source for Pucci Gear Information</h2>
-                    <p>Welcome! We're dedicated to providing US-based anglers with comprehensive reviews and guides for Pucci fishing tackle. Whether you're looking for the <span class="highlight-bg">best Pucci fishing lures for bass and trout</span> or need a complete setup with sinkers, hooks, and leaders, we've got you covered. Our goal is to help you find the perfect, affordable fishing lures and gear for your needs, all available for purchase on Amazon.</p>
+                    <p>Welcome! We're dedicated to providing US-based anglers with comprehensive reviews and guides for Pucci fishing tackle. Whether you're looking for the <span class="highlight-bg">best Pucci fishing lures for bass and trout</span> or need a complete setup with sinkers, hooks, and leaders, we've got you covered. Our goal is to help you find the perfect, affordable fishing lures and gear for your needs, all available for purchase on Amazon. We constantly update our resources to reflect the most current trends and innovations in tackle equipment.</p>
                 </div>
 
                 <div class="grid-3">
                     <div class="category-card">
                         <div class="icon">🐟</div>
                         <h3>Pucci Lures</h3>
-                        <p>Explore a wide variety of lures, from soft plastics to metal jigs, designed for freshwater and saltwater fishing.</p>
+                        <p>Explore a wide variety of lures, from soft plastics to metal jigs, designed for freshwater and saltwater fishing. Our collection helps you compare and choose the best options available online.</p>
                         <a href="lures.html" class="btn btn-secondary">Explore Lures</a>
                     </div>
                     <div class="category-card">
                         <div class="icon">⚓</div>
                         <h3>Terminal Tackle</h3>
-                        <p>Find essential <span class="highlight">Pucci fishing sinkers, hooks, rigs, and leaders</span> to complete your setup and improve your catch rate.</p>
+                        <p>Find essential <span class="highlight">Pucci fishing sinkers, hooks, rigs, and leaders</span> to complete your setup and improve your catch rate. We highlight only the most reliable and affordable picks.</p>
                         <a href="gear-guide.html" class="btn btn-secondary">Learn More</a>
                     </div>
                     <div class="category-card">
                         <div class="icon">📦</div>
                         <h3>Kits & Combos</h3>
-                        <p>Get started quickly with affordable and comprehensive tackle kits perfect for beginners and seasoned anglers alike.</p>
+                        <p>Get started quickly with affordable and comprehensive tackle kits perfect for beginners and seasoned anglers alike. Compare value packs for freshwater and saltwater fishing.</p>
                         <a href="buy-now.html" class="btn btn-secondary">Shop Kits</a>
                     </div>
                 </div>
@@ -76,7 +106,7 @@
             <div class="container text-center">
                 <h2>Why Choose Pucci for Your Fishing Gear?</h2>
                 <p style="max-width: 700px; margin: 0 auto 2rem;">Pucci has quickly become one of the <strong>top-rated fishing brands in the US</strong> for several key reasons.</p>
-                <p>They focus on creating high-performance gear that doesn't break the bank. This makes them an excellent choice for both hobbyists and serious sport fishers. When you <span class="highlight-bg">buy Pucci tackle online with fast shipping in USA</span> via Amazon, you're getting gear that's been designed with the modern angler in mind. Their commitment to quality ensures every cast counts.</p>
+                <p>They focus on creating high-performance gear that doesn't break the bank. This makes them an excellent choice for both hobbyists and serious sport fishers. When you <span class="highlight-bg">buy Pucci tackle online with fast shipping in USA</span> via Amazon, you're getting gear that's been designed with the modern angler in mind. Their commitment to quality ensures every cast counts. We research and recommend only verified bestsellers with real user reviews.</p>
                 <a href="about.html" class="btn btn-primary">Learn About the Brand</a>
             </div>
         </section>
@@ -85,10 +115,10 @@
     <footer class="main-footer">
         <div class="container footer-content">
             <h4>About This Site</h4>
-            <p>puccifishinglures.netlify.app is an independent affiliate website. We provide expert reviews and guides to help you choose the best Pucci fishing gear. Our goal is to provide valuable information to the US angling community.</p>
+            <p>puccifishinglures.netlify.app is an independent affiliate website. We provide expert reviews and guides to help you choose the best Pucci fishing gear. Our goal is to provide valuable information to the US angling community and help beginners get started with ease.</p>
             <div class="disclaimer-box">
                 <p style="margin:0; font-weight: 600;">Legal Disclaimer</p>
-                <p style="margin:0; font-size: 0.8rem;">As an Amazon Associate, we earn from qualifying purchases.</p>
+                <p style="margin:0; font-size: 0.8rem;">As an Amazon Associate, we earn from qualifying purchases. Product names, logos, brands, and other trademarks featured are the property of their respective trademark holders.</p>
             </div>
             <p style="margin-top: 2rem; font-size: 0.8rem;">Copyright © 2025 puccifishinglures.netlify.app. All Rights Reserved.</p>
         </div>
