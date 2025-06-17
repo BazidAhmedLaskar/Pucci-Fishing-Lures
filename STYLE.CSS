@@ -75,12 +75,20 @@ h1 { font-size: 3rem; } h2 { font-size: 2.5rem; text-align: center; margin-botto
 .team-card .role { color: var(--text-light); font-style: italic; }
 .pro-tip { background-color: #e3f2fd; border-left: 4px solid var(--primary-color); padding: 20px; margin: 2rem 0; border-radius: 0 8px 8px 0; }
 .pro-tip p:last-child { margin-bottom: 0; }
-.product-highlight-box { background: var(--light-bg); border: 1px solid var(--border-color); border-left: 5px solid var(--secondary-color); padding: 25px; border-radius: 8px; margin: 2rem 0; }
-.product-highlight-box h3 { color: var(--secondary-color); }
+.verdict-box { background: var(--light-bg); border: 1px solid var(--border-color); border-left: 5px solid var(--accent-color); padding: 25px; border-radius: 8px; margin: 2rem 0; }
+.verdict-box h3 { margin-bottom: 1rem; color: var(--primary-color); }
+.verdict-box .rating { font-size: 2.5rem; font-weight: 700; color: var(--secondary-color); }
+.verdict-box .rating-label { font-weight: 600; color: var(--text-dark); }
+.page-header { text-align: center; padding: 60px 0; background-color: var(--light-bg); border-bottom: 1px solid var(--border-color); }
 
 /* Back to Top Button */
 #back-to-top { position: fixed; bottom: 20px; right: 20px; background-color: var(--accent-color); color: white; width: 50px; height: 50px; text-align: center; line-height: 50px; font-size: 24px; border-radius: 50%; text-decoration: none; opacity: 0; visibility: hidden; transition: opacity 0.3s, visibility 0.3s; z-index: 1000; }
 #back-to-top.show { opacity: 1; visibility: visible; }
+.disclaimer-box { background: rgba(0,0,0,0.2); padding: 15px; border-radius: 8px; margin-top: 2rem; }
+.footer-content { max-width: 700px; margin: 0 auto; }
+.main-footer { background-color: var(--text-dark); color: var(--white); padding: 40px 0 20px; text-align: center; }
+.main-footer h4 { color: var(--white); }
+.main-footer p { color: rgba(255,255,255,0.7); font-size: 0.9rem; }
 
 /* --- RESPONSIVE DESIGN --- */
 @media (max-width: 992px) {
@@ -95,4 +103,5 @@ h1 { font-size: 3rem; } h2 { font-size: 2.5rem; text-align: center; margin-botto
     h1 { font-size: 2.5rem; } h2 { font-size: 2rem; }
     .grid-2, .grid-3, .grid-4 { grid-template-columns: 1fr; }
     .grid-4 { gap: 40px; }
+    .comparison-table { display: block; overflow-x: auto; white-space: nowrap; }
 }
